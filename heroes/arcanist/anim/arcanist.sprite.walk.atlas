@@ -1,0 +1,166 @@
+arcanist.sprite.walk.png
+size: 1121,281
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+back_strap
+  rotate: true
+  xy: 1059, 123
+  size: 23, 49
+  orig: 23, 49
+  offset: 0, 0
+  index: -1
+belt
+  rotate: false
+  xy: 360, 84
+  size: 154, 45
+  orig: 154, 45
+  offset: 0, 0
+  index: -1
+bottom_scroll
+  rotate: false
+  xy: 627, 5
+  size: 135, 39
+  orig: 135, 39
+  offset: 0, 0
+  index: -1
+dagger
+  rotate: true
+  xy: 360, 2
+  size: 80, 133
+  orig: 80, 133
+  offset: 0, 0
+  index: -1
+front_strap
+  rotate: true
+  xy: 935, 22
+  size: 96, 61
+  orig: 96, 61
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 516, 8
+  size: 109, 121
+  orig: 109, 121
+  offset: 0, 0
+  index: -1
+left_arm
+  rotate: true
+  xy: 627, 160
+  size: 119, 202
+  orig: 119, 202
+  offset: 0, 0
+  index: -1
+left_foot
+  rotate: false
+  xy: 268, 48
+  size: 76, 32
+  orig: 76, 32
+  offset: 0, 0
+  index: -1
+left_pants
+  rotate: false
+  xy: 779, 18
+  size: 50, 140
+  orig: 50, 140
+  offset: 0, 0
+  index: -1
+left_robes
+  rotate: true
+  xy: 2, 19
+  size: 61, 264
+  orig: 61, 264
+  offset: 0, 0
+  index: -1
+medallion
+  rotate: false
+  xy: 268, 5
+  size: 57, 41
+  orig: 57, 41
+  offset: 0, 0
+  index: -1
+middle_robes
+  rotate: true
+  xy: 627, 46
+  size: 62, 138
+  orig: 62, 138
+  offset: 0, 0
+  index: -1
+right_arm
+  rotate: true
+  xy: 2, 82
+  size: 132, 281
+  orig: 132, 281
+  offset: 0, 0
+  index: -1
+right_foot
+  rotate: false
+  xy: 999, 120
+  size: 58, 26
+  orig: 58, 26
+  offset: 0, 0
+  index: -1
+right_robes
+  rotate: true
+  xy: 361, 131
+  size: 148, 264
+  orig: 148, 264
+  offset: 0, 0
+  index: -1
+satchel
+  rotate: true
+  xy: 831, 26
+  size: 92, 102
+  orig: 92, 102
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 216
+  size: 357, 63
+  orig: 357, 63
+  offset: 0, 0
+  index: -1
+shirt_tails
+  rotate: true
+  xy: 998, 77
+  size: 41, 121
+  orig: 41, 121
+  offset: 0, 0
+  index: -1
+skull
+  rotate: false
+  xy: 285, 82
+  size: 73, 132
+  orig: 73, 132
+  offset: 0, 0
+  index: -1
+tassels
+  rotate: true
+  xy: 998, 50
+  size: 25, 57
+  orig: 25, 57
+  offset: 0, 0
+  index: -1
+top_scroll
+  rotate: false
+  xy: 627, 110
+  size: 150, 48
+  orig: 150, 48
+  offset: 0, 0
+  index: -1
+torso
+  rotate: true
+  xy: 831, 120
+  size: 159, 166
+  orig: 159, 166
+  offset: 0, 0
+  index: -1
+turban
+  rotate: true
+  xy: 999, 148
+  size: 131, 116
+  orig: 131, 116
+  offset: 0, 0
+  index: -1

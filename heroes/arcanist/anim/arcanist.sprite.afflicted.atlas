@@ -1,0 +1,26 @@
+arcanist.sprite.afflicted.png
+size: 3452,1150
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+afflicted
+  rotate: true
+  xy: 2, 2
+  size: 1146, 1810
+  orig: 1146, 1810
+  offset: 0, 0
+  index: -1
+background
+  rotate: false
+  xy: 1814, 21
+  size: 1341, 1127
+  orig: 1341, 1127
+  offset: 0, 0
+  index: -1
+crown
+  rotate: true
+  xy: 3157, 779
+  size: 369, 293
+  orig: 369, 293
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,19 @@
+arcanist.sprite.defend.png
+size: 588,424
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+defend
+  rotate: true
+  xy: 2, 2
+  size: 420, 519
+  orig: 420, 519
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 523, 65
+  size: 357, 63
+  orig: 357, 63
+  offset: 0, 0
+  index: -1

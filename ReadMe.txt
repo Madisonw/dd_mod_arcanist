@@ -1,0 +1,125 @@
+
+The Arcanist Class Mod (v1.2) - working with game version 13488
+
+------------------------------------
+
+Arcanist. Manipulator of Minds, Conjuror of Illusions.  Some might call it �parlor tricks�, but for a true master Arcanist, a mental prison is as good as iron bars, and imaginary wounds can be made painfully real.  Death is but in the mind, yet mindful of death is as fatal as dagger in the heart.A backline supporter, who uses her ability to make her companions harder to hit.  Also an array debuffs to cast on enemies to cut down the threat.    
+
+------------------------------------
+
+
+
+
+> How to Install < 
+
+Simply copy each of the folder into the DarkestDungeon game folder (usually here  C:\Program Files (x86)\Steam\steamapps\common\DarkestDungeon\)
+This should copy over and add some files to each of the folder.  See below for instruction how to add the Effects and Localization.
+
+It would also be a good idea to back up some files before hand.
+
+The Surgeon should appear as a hirable hero in the stagecoach.  It might be a good idea to start a new game (since if the mod file were deleted, having an Arcanist on your roaster might crash the game).
+
+------------------------------------
+
+
+> Game Updates < 
+
+Currently, if the game updates, sometime it would whipe out some of the files need for this mod. Usually, this require re-copy of the Effects and run the Locationzation again.  
+
+
+
+------------------------------------
+
+
+
+> LOCALIZATON <
+
+Go to the localization fold (usually here  C:\Program Files (x86)\Steam\steamapps\common\DarkestDungeon\localization\)
+Make sure the  [this hero name].string_table file is in that folder.  Run the Localization.bat file, and it will compile the table. 
+
+
+------------------------------------
+
+
+> EFFECTS <
+
+Since currently there are no easy way to creat add on effects as seperate files, it is best to manually add them on.
+Simply go to the effect file, usually here  C:\Program Files (x86)\Steam\steamapps\common\DarkestDungeon\scripts\, open the effects.DARKEST file with a notepad, copy and paste and add the following lines at the bottom.  Note that if any of the line are missing, it might crash the game.  Thus if that happen due to updates or over writes, please re-paste the line back in.
+
+Also sometime the game will update the effect file, which erase any of the added in.  If the game does not start up after a update, likely that would be the problem.  If so, please re-add in the effects for the mod again.  
+
+
+
+
+//"Arcanist skill effect as follow"
+//--------------------------------------------------
+
+
+effect: .name "arcanistizing curse 1" .target "target" .curio_result_type "negative" .chance 90% .combat_stat_buff 1 .attack_rating_add -17% .defense_rating_add -17% 	.on_hit true .on_miss false
+effect: .name "arcanistizing curse 2" .target "target" .curio_result_type "negative" .chance 95% .combat_stat_buff 1 .attack_rating_add -20% .defense_rating_add -20% 	.on_hit true .on_miss false
+effect: .name "arcanistizing curse 3" .target "target" .curio_result_type "negative" .chance 100% .combat_stat_buff 1 .attack_rating_add -22% .defense_rating_add -22% 	.on_hit true .on_miss false
+effect: .name "arcanistizing curse 4" .target "target" .curio_result_type "negative" .chance 105% .combat_stat_buff 1 .attack_rating_add -25% .defense_rating_add -25% 	.on_hit true .on_miss false
+effect: .name "arcanistizing curse 5" .target "target" .curio_result_type "negative" .chance 110% .combat_stat_buff 1 .attack_rating_add -25% .defense_rating_add -27% 	.on_hit true .on_miss false
+
+
+effect: .name "Dodge Other 1" .target "target" .curio_result_type "positive" .chance 100% .combat_stat_buff 1 .defense_rating_add 25%	.on_hit true .on_miss true .queue true
+effect: .name "Dodge Other 2" .target "target" .curio_result_type "positive" .chance 100% .combat_stat_buff 1 .defense_rating_add 27%	.on_hit true .on_miss true .queue true
+effect: .name "Dodge Other 3" .target "target" .curio_result_type "positive" .chance 100% .combat_stat_buff 1 .defense_rating_add 30%	.on_hit true .on_miss true .queue true
+effect: .name "Dodge Other 4" .target "target" .curio_result_type "positive" .chance 100% .combat_stat_buff 1 .defense_rating_add 32%	.on_hit true .on_miss true .queue true
+effect: .name "Dodge Other 5" .target "target" .curio_result_type "positive" .chance 100% .combat_stat_buff 1 .defense_rating_add 35%	.on_hit true .on_miss true .queue true
+
+effect: .name "Team Dodge 1" .target "target" .curio_result_type "positive" .chance 100% .combat_stat_buff 1 .defense_rating_add 15%	.on_hit true .on_miss true .apply_once false .queue false
+
+effect: .name "Team Dodge 2" .target "target" .curio_result_type "positive" .chance 100% .combat_stat_buff 1 .defense_rating_add 17%	.on_hit true .on_miss true .apply_once false .queue false
+
+effect: .name "Team Dodge 3" .target "target" .curio_result_type "positive" .chance 100% .combat_stat_buff 1 .defense_rating_add 20%	.on_hit true .on_miss true .apply_once false .queue false
+
+effect: .name "Team Dodge 4" .target "target" .curio_result_type "positive" .chance 100% .combat_stat_buff 1 .defense_rating_add 22%	.on_hit true .on_miss true .apply_once false .queue false
+
+effect: .name "Team Dodge 5" .target "target" .curio_result_type "positive" .chance 100% .combat_stat_buff 1 .defense_rating_add 25%	.on_hit true .on_miss true .apply_once false .queue false
+
+
+effect: .name "Stunt Self" .target "performer".curio_result_type "negative" .chance 100%  .stun 1 .on_hit true .on_miss true .queue true
+
+effect: .name "Weak Slow 1" .target "target" .curio_result_type "negative" .chance 100% .combat_stat_buff 1 .speed_rating_add -1	.on_hit true .on_miss false
+effect: .name "Weak Slow 2" .target "target" .curio_result_type "negative" .chance 105% .combat_stat_buff 1 .speed_rating_add -2	.on_hit true .on_miss false
+effect: .name "Weak Slow 3" .target "target" .curio_result_type "negative" .chance 110% .combat_stat_buff 1 .speed_rating_add -3	.on_hit true .on_miss false
+
+effect: .name "Weak self Dodge 1" .target "performer".curio_result_type "positive" .chance 100% .combat_stat_buff 1 .defense_rating_add 7%		.on_hit true .on_miss true .queue true
+effect: .name "Weak self Dodge 2" .target "performer".curio_result_type "positive" .chance 105% .combat_stat_buff 1 .defense_rating_add 10%		.on_hit true .on_miss true .queue true
+effect: .name "Weak self Dodge 3" .target "performer".curio_result_type "positive" .chance 110% .combat_stat_buff 1 .defense_rating_add 13%		.on_hit true .on_miss true .queue true
+
+
+effect: .name "Weak Deacc 1" .target "target" .curio_result_type "negative" .chance 100% .combat_stat_buff 1 .attack_rating_add -3%	.on_hit true .on_miss false
+effect: .name "Weak Deacc 2" .target "target" .curio_result_type "negative" .chance 105% .combat_stat_buff 1 .attack_rating_add -5%	.on_hit true .on_miss false
+effect: .name "Weak Deacc 3" .target "target" .curio_result_type "negative" .chance 110% .combat_stat_buff 1 .attack_rating_add -7%	.on_hit true .on_miss false
+
+
+effect: .name "Mes Slow 1" .target "target" .curio_result_type "negative" .chance 90% .combat_stat_buff 1 .speed_rating_add -3	.on_hit true .on_miss false
+effect: .name "Mes Slow 2" .target "target" .curio_result_type "negative" .chance 100% .combat_stat_buff 1 .speed_rating_add -4	.on_hit true .on_miss false
+effect: .name "Mes Slow 3" .target "target" .curio_result_type "negative" .chance 110% .combat_stat_buff 1 .speed_rating_add -5	.on_hit true .on_miss false
+
+
+effect: .name "Mes self Quicken 1" .target "performer" .curio_result_type "positive" .chance 100% .combat_stat_buff 1 .speed_rating_add 1	.on_hit true .on_miss false
+effect: .name "Mes self Quicken 2" .target "performer" .curio_result_type "positive" .chance 100% .combat_stat_buff 1 .speed_rating_add 2	.on_hit true .on_miss false
+effect: .name "Mes self Quicken 3" .target "performer" .curio_result_type "positive" .chance 100% .combat_stat_buff 1 .speed_rating_add 3	.on_hit true .on_miss false
+
+
+effect: .name "Mes buff Quicken 1" .target "target" .curio_result_type "positive" .chance 100% .combat_stat_buff 1 .speed_rating_add 1	.on_hit true .on_miss false
+effect: .name "Mes buff Quicken 2" .target "target" .curio_result_type "positive" .chance 100% .combat_stat_buff 1 .speed_rating_add 2	.on_hit true .on_miss false
+
+
+
+------------------------------------
+
+Moded by: Actionjack
+
+Thank you for playing. 
+
+
+
+Special thanks for KeldRhygar for helping catch an error in the code.  
+
+------------------------------------
+
+<Arcanist Class Mod> is not an official Red Hook Studios product or product modification, and Red Hook Studios Inc. is not responsible in any way for changes or damages that may result from using the mod. Furthermore, �Darkest Dungeon� and the Darkest Dungeon logo are trademarks of Red Hook Studios Inc. All content in the game is Copyright Red Hook Studios Inc. All rights reserved.

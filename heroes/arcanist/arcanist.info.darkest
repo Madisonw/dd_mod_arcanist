@@ -1,0 +1,65 @@
+resistances: .stun 30% .poison 20% .bleed 30% .disease 30% .move 40% .debuff 50% .death_blow 67% .trap 20%
+weapon: .name "arcanist_weapon_0" .atk 0% .dmg 4 7 .crit 7.5% .spd 6
+weapon: .name "arcanist_weapon_1" .atk 0% .dmg 5 8 .crit 8% .spd 7 .upgradeRequirementCode 0
+weapon: .name "arcanist_weapon_2" .atk 0% .dmg 6 9 .crit 8.5% .spd 7 .upgradeRequirementCode 1
+weapon: .name "arcanist_weapon_3" .atk 0% .dmg 6 10 .crit 9% .spd 8 .upgradeRequirementCode 2
+weapon: .name "arcanist_weapon_4" .atk 0% .dmg 7 11 .crit 9.5% .spd 8 .upgradeRequirementCode 3
+armour: .name "arcanist_armour_0" .def 15% .prot 0 .hp 18 .spd 0
+armour: .name "arcanist_armour_1" .def 20% .prot 0 .hp 22 .spd 0 .upgradeRequirementCode 0
+armour: .name "arcanist_armour_2" .def 25% .prot 0 .hp 26 .spd 0 .upgradeRequirementCode 1
+armour: .name "arcanist_armour_3" .def 30% .prot 0 .hp 30 .spd 0 .upgradeRequirementCode 2
+armour: .name "arcanist_armour_4" .def 35% .prot 0 .hp 34 .spd 0 .upgradeRequirementCode 3
+
+combat_skill: .id "arcane_blast" .level 0 .type "ranged" .atk 90% .dmg 0% .crit 6% .launch 34 .target 234  .is_crit_valid True .generation_guaranteed true  .effect "Damage Buff 1"
+combat_skill: .id "arcane_blast" .level 1 .type "ranged" .atk 95% .dmg 0% .crit 7% .launch 34 .target 234  .is_crit_valid True .effect "Damage Buff 1"
+combat_skill: .id "arcane_blast" .level 2 .type "ranged" .atk 100% .dmg 0% .crit 8% .launch 34 .target 234  .is_crit_valid True .effect "Damage Buff 1"
+combat_skill: .id "arcane_blast" .level 3 .type "ranged" .atk 105% .dmg 0% .crit 9% .launch 34 .target 234  .is_crit_valid True .effect "Damage Buff 1"
+combat_skill: .id "arcane_blast" .level 4 .type "ranged" .atk 110% .dmg 0% .crit 9% .launch 34 .target 234  .is_crit_valid True .effect "Damage Buff 1"
+
+combat_skill: .id "arcane_nova" .level 0 .type "ranged" .atk 90% .dmg -60% .crit 0% .launch 321 .target ~123  .is_crit_valid True
+combat_skill: .id "arcane_nova" .level 1 .type "ranged" .atk 95% .dmg -60% .crit 0% .launch 321 .target ~123  .is_crit_valid True
+combat_skill: .id "arcane_nova" .level 2 .type "ranged" .atk 100% .dmg -60% .crit 0% .launch 321 .target ~123  .is_crit_valid True
+combat_skill: .id "arcane_nova" .level 3 .type "ranged" .atk 105% .dmg -60% .crit 0% .launch 321 .target ~123  .is_crit_valid True
+combat_skill: .id "arcane_nova" .level 4 .type "ranged" .atk 110% .dmg -60% .crit 0% .launch 321 .target ~123  .is_crit_valid True
+
+combat_skill: .id "magnetic_attraction" .level 0 .type "ranged" .atk 70% .dmg -100% .crit 0% .move 0 1 .launch 43 .target 34  .is_crit_valid False  .effect "Pull 1B" "clear_corpses"
+combat_skill: .id "magnetic_attraction" .level 1 .type "ranged" .atk 75% .dmg -100% .crit 0% .move 0 1 .launch 43 .target 34  .is_crit_valid False  .effect "Pull 1C" "clear_corpses"
+combat_skill: .id "magnetic_attraction" .level 2 .type "ranged" .atk 80% .dmg -100% .crit 0% .move 0 1 .launch 43 .target 34  .is_crit_valid False  .effect "Pull 1D" "clear_corpses"
+combat_skill: .id "magnetic_attraction" .level 3 .type "ranged" .atk 85% .dmg -100% .crit 0% .move 0 1 .launch 43 .target 34  .is_crit_valid False  .effect "Pull 1E" "clear_corpses"
+combat_skill: .id "magnetic_attraction" .level 4 .type "ranged" .atk 90% .dmg -100% .crit 0% .move 0 1 .launch 43 .target 34  .is_crit_valid False  .effect "Pull 1F" "clear_corpses"
+
+combat_skill: .id "tainted_aether_blast" .level 0 .type "ranged" .atk 90% .dmg 150% .crit 2% .move 1 0 .launch 3 .target 3  .is_crit_valid True  .effect "Push 1B" "clear_corpses"
+combat_skill: .id "tainted_aether_blast" .level 1 .type "ranged" .atk 95% .dmg 150% .crit 4% .move 1 0 .launch 3 .target 3  .is_crit_valid True  .effect "Push 1C" "clear_corpses"
+combat_skill: .id "tainted_aether_blast" .level 2 .type "ranged" .atk 100% .dmg 150% .crit 6% .move 1 0 .launch 3 .target 3  .is_crit_valid True  .effect "Push 1D" "clear_corpses"
+combat_skill: .id "tainted_aether_blast" .level 3 .type "ranged" .atk 105% .dmg 150% .crit 7% .move 1 0 .launch 3 .target 3  .is_crit_valid True  .effect "Push 1E" "clear_corpses"
+combat_skill: .id "tainted_aether_blast" .level 4 .type "ranged" .atk 110% .dmg 150% .crit 8% .move 1 0 .launch 3 .target 3  .is_crit_valid True  .effect "Push 1F" "clear_corpses"
+
+combat_move_skill: .id "move" .level 0 .type "move" .move 2 1 .launch 4321
+
+combat_skill: .id "pour_over_the_pages" .level 0 .type "melee" .atk 0% .dmg 0% .crit 0% .launch 34 .target .is_crit_valid False .effect "Absolution HealStress 1"
+combat_skill: .id "pour_over_the_pages" .level 1 .type "melee" .atk 0% .dmg 0% .crit 0% .launch 34 .target .is_crit_valid False .effect "Absolution HealStress 2"
+combat_skill: .id "pour_over_the_pages" .level 2 .type "melee" .atk 0% .dmg 0% .crit 0% .launch 34 .target .is_crit_valid False .effect "Absolution HealStress 3"
+combat_skill: .id "pour_over_the_pages" .level 3 .type "melee" .atk 0% .dmg 0% .crit 0% .launch 34 .target .is_crit_valid False .effect "Absolution HealStress 4"
+combat_skill: .id "pour_over_the_pages" .level 4 .type "melee" .atk 0% .dmg 0% .crit 0% .launch 34 .target .is_crit_valid False .effect "Absolution HealStress 5"
+
+combat_skill: .id "desperate_flash" .level 0 .type "ranged" .atk 90% .dmg -50% .crit 4% .move 1 0 .launch 12 .target 12  .effect "Stun 1"
+combat_skill: .id "desperate_flash" .level 1 .type "ranged" .atk 95% .dmg -50% .crit 6% .move 1 0 .launch 12 .target 12  .effect "Stun 2"
+combat_skill: .id "desperate_flash" .level 2 .type "ranged" .atk 100% .dmg -50% .crit 7% .move 1 0 .launch 12 .target 12  .effect "Stun 3"
+combat_skill: .id "desperate_flash" .level 3 .type "ranged" .atk 105% .dmg -50% .crit 8% .move 1 0 .launch 12 .target 12  .effect "Stun 4"
+combat_skill: .id "desperate_flash" .level 4 .type "ranged" .atk 110% .dmg -50% .crit 9% .move 1 0 .launch 12 .target 12  .effect "Stun 5"
+
+combat_skill: .id "polymorph" .level 0 .type "ranged" .atk 90% .dmg 0% .crit 0% .launch 34 .target 1234  .effect "Stun 1"
+combat_skill: .id "polymorph" .level 1 .type "ranged" .atk 95% .dmg 0% .crit 0% .launch 34 .target 1234  .effect "Stun 2"
+combat_skill: .id "polymorph" .level 2 .type "ranged" .atk 100% .dmg 0% .crit 0% .launch 34 .target 1234  .effect "Stun 3"
+combat_skill: .id "polymorph" .level 3 .type "ranged" .atk 105% .dmg 0% .crit 0% .launch 34 .target 1234  .effect "Stun 4"
+combat_skill: .id "polymorph" .level 4 .type "ranged" .atk 110% .dmg 0% .crit 0% .launch 34 .target 1234  .effect "Stun 5"
+
+tag: .id "light"
+tag: .id "non-religious"
+id_index: .index 21
+
+deaths_door: .buffs deathsdoorACCDebuff deathsdoorDMGLowDebuff deathsdoorDMGHighDebuff deathsdoorSPDDebuff deathsdoorSRDebuff .recovery_buffs mortalityACCDebuff mortalityDMGLowDebuff mortalityDMGHighDebuff mortalitySPDDebuff mortalitySRDebuff .recovery_heart_attack_buffs heartattackACCDebuff heartattackDMGLowDebuff heartattackDMGHighDebuff heartattackSPDDebuff heartattackSRDebuff
+controlled: .target_rank 1
+
+generation: .number_of_positive_quirks_min 1 .number_of_positive_quirks_max 2 .number_of_negative_quirks_min 1 .number_of_negative_quirks_max 2 .number_of_class_specific_camping_skills 2 .number_of_shared_camping_skills 1 .number_of_random_combat_skills 4
+skill_selection: .can_select_combat_skills true .number_of_selected_combat_skills_max 4
